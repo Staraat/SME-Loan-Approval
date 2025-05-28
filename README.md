@@ -24,12 +24,12 @@ Built with **SAS OnDemand for Academics** and documented in a 90-page report.
 
 | Step | SAS Procedures / Actions | Highlights |
 |------|--------------------------|------------|
-| **1 — Data Import** | `PROC IMPORT` → permanent lib `LIBOCT34` | 1 666 rows, 13 categorical & 7 numeric vars. |
-| **2 — Metadata & EDA** | `PROC CONTENTS`, `PROC SQL` | Auto-generated data dictionary (p. 7). |
-| **3 — Missing-value Handling** | Custom macros (`%IMPUTE_CAT`, `%IMPUTE_NUM`) | Mode/median imputation reduced NA rate from 6 % → 0 %. |
-| **4 — Feature Engineering** | Dummy encoding, ratio features | Added *Income-to-Loan* and *Family-Load* ratios. |
-| **5 — Modeling** | `PROC LOGISTIC` + stepwise | Final model: **AUC 0.84, Accuracy 0.81** on hold-out. |
-| **6 — Scoring & Reporting** | `PROC SCORE`, `ODS PDF` | Generates per-applicant probabilities (see `MY_LAS_REPORT*.pdf`). |
+| **1 Data Import** | `PROC IMPORT` → permanent lib `LIBOCT34` | 1 666 rows, 13 categorical & 7 numeric vars. |
+| **2 Metadata & EDA** | `PROC CONTENTS`, `PROC SQL` | Auto-generated data dictionary (p. 7). |
+| **3 Missing-value Handling** | Custom macros (`%IMPUTE_CAT`, `%IMPUTE_NUM`) | Mode/median imputation reduced NA rate from 6 % → 0 %. |
+| **4 Feature Engineering** | Dummy encoding, ratio features | Added *Income-to-Loan* and *Family-Load* ratios. |
+| **5 Modeling** | `PROC LOGISTIC` + stepwise | Final model: **AUC 0.84, Accuracy 0.81** on hold-out. |
+| **6 Scoring & Reporting** | `PROC SCORE`, `ODS PDF` | Generates per-applicant probabilities (see `MY_LAS_REPORT*.pdf`). |
 
 ---
 
